@@ -4,6 +4,12 @@ var topics = ['Disneyland', 'Pixar', 'HIMYM', 'Huskies', 'Puppies', 'Super Smash
 
 // For loop that will go through the Topics Array and turn them into buttons
 
+
+function displayGiphy(){
+	var topicName = $(this).data("name");
+	var queryURL = ""
+}
+
 function renderButtons(){
 	$('#viewGiphy').empty(); //prevents the div to keep appending the same set of buttons
 	
@@ -16,12 +22,12 @@ function renderButtons(){
 }
 
 // Function that will take in new topics and turn them into buttons as well
-// $('#addTopic').on('click', function(){
-// 	var newTopic = $('#topic_input').val(); //will take the value that is entered in the form box
-// 	topics.push(newTopic);
+$('#addTopic').on('click', function(){
+	var newTopic = $('#topic_input').val(); //will take the value that is entered in the form box
+	topics.push(newTopic);
 
-// 	renderButtons();
-// 	return false;
-// });
+	renderButtons();
+	return false;
+});
 
 renderButtons();
