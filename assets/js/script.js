@@ -7,7 +7,7 @@ function displayGiphy(){
 	var topicName = $(this).data("name");
 	var gifNumber = "&limit=12";
 
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q="+topicName+gifNumber+"&api_key=dc6zaTOxFJmzC";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q="+topicName+gifNumber+"&api_key=dc6zaTOxFJmzC";
  	
  	$('#viewGiphy').empty();
 	$.ajax({url: queryURL, method: 'GET'}).done(function(response){
