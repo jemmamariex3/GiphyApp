@@ -1,4 +1,14 @@
 # GiphyApp
+Link To Live Project: https://vast-caverns-81496.herokuapp.com/
+
+~~~~~
+Technologies Used:
+*HTML
+*CSS
+*Giphy API
+*Bootstrap
+~~~~~
+
 ### Overview
 I used the GIPHY API to make a dynamic web page that populates with gifs of user's choice.
 
